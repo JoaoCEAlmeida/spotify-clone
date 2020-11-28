@@ -1,0 +1,44 @@
+@media screen and (max-width: 576px) {
+  .sidebar {
+    display: none !important;
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.2;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 230px;
+  height: 100vh;
+  color: white;
+  background-color: #040404;
+}
+
+.sidebar__title {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.sidebar__logo {
+  margin-right: auto;
+  object-fit: contain;
+  height: 70px;
+  padding: 10px;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sidebar__playlists {
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  flex: 1;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sidebar__playlists::-webkit-scrollbar {
+  display: none;
+}
